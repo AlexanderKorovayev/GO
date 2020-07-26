@@ -2,15 +2,18 @@ package main
 
 import "fmt"
 
+//стр126
 func main() {
 	fmt.Println(21.0 / 67.0)
 	fmt.Printf("%0.2f \n", 21.0/67.0)
-	fmt.Printf("A float: %f\n", 3.1415)
-	fmt.Printf("An integer: %d\n", 15)
-	fmt.Printf("A string: %s\n", "hello")
-	fmt.Printf("A boolean: %t\n", false)
-	fmt.Printf("Values: %v %v %v\n", 1.2, "\t", true)
-	fmt.Printf("Values: %#v %#v %#v\n", 1.2, "\t", true)
-	fmt.Printf("Types: %T %T %T\n", 1.2, "\t", true)
-	fmt.Printf("Percent sign: %%\n")
+	test := schet(13, 4)
+	test1 := schet(15, 3)
+	fmt.Println(test)
+	fmt.Println(test1)
+}
+
+func schet(width float64, height float64) float64 {
+	area := width * height
+	fmt.Printf("area is %0.2f\n", area)
+	return area
 }

@@ -1,8 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
-//стр214
 func main() {
 	var mySlice []string
 	mySlice = make([]string, 7)
@@ -24,4 +26,19 @@ func main() {
 
 	test1 := []float64{1, 2, 3}
 	fmt.Println(test1)
+
+	mas := [5]int{1, 2, 3, 4, 5}
+	slice := mas[1:3]
+	fmt.Println(mas)
+	fmt.Println(slice)
+	fmt.Println(reflect.TypeOf(mas))
+	fmt.Println(reflect.TypeOf(slice))
+
+	slice = append(slice, 7)
+	fmt.Println(slice)
+	fmt.Println(mas)
+
+	slice = append(slice, 8, 9)
+	fmt.Println(slice)
+	fmt.Println(mas)
 }

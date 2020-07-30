@@ -9,4 +9,6 @@ func main() {
 		sum += number
 	}
 	fmt.Println(sum)
+	sampleCaunt := float64(len(numbers))
+	fmt.Printf("avrg is %0.2f\n", sampleCaunt)
 }

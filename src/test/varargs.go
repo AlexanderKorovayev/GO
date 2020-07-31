@@ -5,7 +5,6 @@ import (
 	"reflect"
 )
 
-//стр239
 func main() {
 	test(1, 2, 3)
 	test1(1, "test")

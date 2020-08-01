@@ -2,7 +2,6 @@ package main
 
 import "fmt"
 
-//стр270
 func main() {
 	var struct1 struct {
 		num  int

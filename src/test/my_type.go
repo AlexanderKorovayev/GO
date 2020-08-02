@@ -12,7 +12,6 @@ type car struct {
 	topSpeed float64
 }
 
-//стр299
 func main() {
 	var porsche car
 	porsche.name = "Porsche 911 R"

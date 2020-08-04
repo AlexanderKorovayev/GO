@@ -6,7 +6,6 @@ type Liters float64
 type Gallons float64
 type MyType string
 
-//стс323
 func main() {
 	var carFuel Gallons
 	var busFuel Liters

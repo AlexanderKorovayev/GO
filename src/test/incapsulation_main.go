@@ -6,7 +6,6 @@ import (
 	"test/incapsulation_lib"
 )
 
-//стр355
 func main() {
 	date := incapsulation_lib.Date{}
 	err := date.SetYear(3)

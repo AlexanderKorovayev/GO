@@ -17,7 +17,6 @@ func playList(device Player, songs []string) {
 	device.Stop()
 }
 
-//стр368
 func main() {
 	player := gadget.TapePlayer{}
 	mixtape := []string{"Jessie's Girl", "Whip It", "9 to 5"}

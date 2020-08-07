@@ -43,7 +43,22 @@ func GetFloats(fileName string) ([]float64, error) {
 }
 
 func test_recover() {
-	recover()
+	// рековер имеет тип интерфейс и поэтому может принимать в себя любые типы
+	// обычно в неё приходит error и можно опирировать этим значением
+	// если привести рековер к нему
+	p := recover()
+	err, ok := p.(error)
+
+	fmt.Println("err ok")
+	fmt.Println(err)
+	fmt.Println(ok)
+
+	if ok {
+		fmt.Println(err.Error())
+	}
+	else{
+		panic(p)
+	}
 }
 
 func freakOut() {
@@ -72,6 +87,8 @@ func main() {
 	// а эта функция ловит рантайм  по принципу try except, но лучше помещать её в defer в тех случаях когда паник и
 	// рековер в одной функуии
 	//recover()
+
 	freakOut()
+
 	fmt.Printf("Sum: %0.2f\n", sum)
 }

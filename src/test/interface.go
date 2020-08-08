@@ -45,7 +45,6 @@ func TryOut2(player Player) {
 	}
 }
 
-//стр 383
 func main() {
 	player := gadget.TapePlayer{}
 	mixtape := []string{"Jessie's Girl", "Whip It", "9 to 5"}
